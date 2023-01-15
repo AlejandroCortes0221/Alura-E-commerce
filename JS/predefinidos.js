@@ -1,5 +1,6 @@
-import { categorias } from "./Datos.js";
-import { informacion } from "./Datos.js";
+import { categorias } from "../JS/datos.js";
+import { informacion } from "../JS/datos.js";
+
 const local = [];
 const verItem = () => {
   const productoLista = JSON.parse(localStorage.getItem("producto")) || [];
