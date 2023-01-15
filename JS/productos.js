@@ -1,5 +1,5 @@
-import { categorias } from "./datos.js";
-import { informacion } from "./datos.js";
+import { categorias } from "../JS/datos.js";
+import { informacion } from "../JS/datos.js";
 var numeracion = 1;
 
 const verItem = () => {

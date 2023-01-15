@@ -1,4 +1,4 @@
-import { informacion } from "./datos.js"; 
+import { informacion } from "../JS/datos.js"; 
 const imagen = document.querySelector("[data-imagen-producto]");
 const titulo = document.querySelector("[data-titulo-producto]");
 const precio = document.querySelector("[data-precio-producto]");
