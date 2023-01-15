@@ -2,7 +2,7 @@ export const categorias = ["Juegos", "Consolas", "Pc"];
 export const informacion = [
   [
     "Juegos",
-    "../../assets/img/juegos/asa.jpg",
+    "assets/img/juegos/asa.jpg",
     "Assasin's Creed",
     "119.000",
     "Assassins Creed es un videojuego de aventura de acción y de sigilo en la que el jugador sobre todo asume el papel de Altaïr, experimentado por el protagonista Desmond Miles. El objetivo principal del juego es llevar a cabo una serie de asesinatos ordenados por Al Mualim, el líder de los asesinos",
