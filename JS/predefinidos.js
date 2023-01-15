@@ -81,7 +81,7 @@ const juegosIndex = (i) => {
   const verMas = document.createElement("a");
   verMas.innerHTML = "Ver producto";
   verMas.classList.add("ver__producto");
-  verMas.setAttribute("href", "../services/ver-producto.html");
+  verMas.setAttribute("href", "services/ver-producto.html");
 
   const cat = informacion[i][0];
   const imag = informacion[i][1];
@@ -130,7 +130,7 @@ const agregados = (resultado, tituloValor, precioValor, descripcionValor, catego
   const verMas = document.createElement("a");
   const verMasTexto = document.createTextNode("Ver producto");
   verMas.classList.add("ver__producto");
-  verMas.setAttribute("href", "../services/ver-producto.html");
+  verMas.setAttribute("href", "services/ver-producto.html");
 
   const cat = categoriaValor;
   const imag = resultado;

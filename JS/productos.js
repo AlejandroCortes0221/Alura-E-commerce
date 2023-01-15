@@ -18,7 +18,7 @@ const predefinidos = () => {
     imagen.style.width = "176px";
     imagen.style.height = "240px";
     imagen.style.background =
-      "url(" + informacion[i][1] + ") no-repeat center / cover";
+      "url(../" + informacion[i][1] + ") no-repeat center / cover";
     imagen.style.display = "flex";
     imagen.style.flexDirection = "row";
     imagen.style.justifyContent = "flex-end";

@@ -55,7 +55,7 @@ const similares = ()=>{
       const verMas = document.createElement("a");
       verMas.innerHTML = "Ver producto";
       verMas.classList.add("ver__producto");
-      verMas.setAttribute("href", "../services/ver-producto.html");
+      verMas.setAttribute("href", "services/ver-producto.html");
 
       const cat = informacion[i][0];
       const imag = informacion[i][1];
@@ -110,7 +110,7 @@ const similaresLocal = ({resultado, tituloValor, precioValor, categoriaValor, de
     const verMas = document.createElement("a");
     verMas.innerHTML = "Ver producto";
     verMas.classList.add("ver__producto");
-    verMas.setAttribute("href", "../services/ver-producto.html");
+    verMas.setAttribute("href", "services/ver-producto.html");
 
     const cat = categoriaValor;
     const imag = resultado;
