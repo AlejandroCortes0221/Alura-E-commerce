@@ -2,14 +2,14 @@ export const categorias = ["Juegos", "Consolas", "Pc"];
 export const informacion = [
   [
     "Juegos",
-    "assets/img/juegos/asa.jpg",
+    "assets/img/juegos/BO3.jpg",
     "Assasin's Creed",
     "119.000",
     "Assassins Creed es un videojuego de aventura de acción y de sigilo en la que el jugador sobre todo asume el papel de Altaïr, experimentado por el protagonista Desmond Miles. El objetivo principal del juego es llevar a cabo una serie de asesinatos ordenados por Al Mualim, el líder de los asesinos",
   ],
   [
     "Juegos",
-    "assets/img/juegos/BO3.jpg",
+    "assets/img/juegos/asa.jpg",
     "COD Black Ops 3",
     "130.000",
     "Call of Duty: Black Ops III tiene lugar en un futuro distópico, situado en 2065, donde la ciencia y la tecnología han cambiado radicalmente a la especie humana, con una sociedad violenta y multitud de protestas tratando de detener el progreso de la tecnología.",
