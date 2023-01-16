@@ -22,7 +22,11 @@ const verLocal = () =>{
 }
 const crearItem = ({ imag, tit, pre, des, cat}) => {
   imagen.classList.add("imagen_producto");
-  imagen.style.background = "url('" + imag + "') no-repeat center / contain";
+  if(imag.includes("assets")){
+    imagen.style.background = "url('../" + imag + "') no-repeat center / contain";
+  }else{
+   imagen.style.background = "url('" + imag + "') no-repeat center / contain";
+  }
   titulo.innerText = tit;
   precio.innerText = "$" + pre + " COP";
   descripcion.innerText = des;
@@ -42,7 +46,7 @@ const similares = ()=>{
       imagen.style.width = "176px";
       imagen.style.height = "240px";
       imagen.style.background =
-        "url(" + informacion[i][1] + ") no-repeat center / cover";
+        "url(../" + informacion[i][1] + ") no-repeat center / cover";
 
       const titulo = document.createElement("h1");
       titulo.classList.add("nombre__producto");
@@ -55,7 +59,7 @@ const similares = ()=>{
       const verMas = document.createElement("a");
       verMas.innerHTML = "Ver producto";
       verMas.classList.add("ver__producto");
-      verMas.setAttribute("href", "services/ver-producto.html");
+      verMas.setAttribute("href", "ver-producto.html");
 
       const cat = informacion[i][0];
       const imag = informacion[i][1];
@@ -110,7 +114,7 @@ const similaresLocal = ({resultado, tituloValor, precioValor, categoriaValor, de
     const verMas = document.createElement("a");
     verMas.innerHTML = "Ver producto";
     verMas.classList.add("ver__producto");
-    verMas.setAttribute("href", "services/ver-producto.html");
+    verMas.setAttribute("href", "ver-producto.html");
 
     const cat = categoriaValor;
     const imag = resultado;
