@@ -5,9 +5,7 @@ const precio = document.querySelector("[data-precio-producto]");
 const descripcion = document.querySelector("[data-descripcion-producto]");
 var categoria = "";
 var titu = "";
- var numero = 0;
-
-
+var numero = 0;
 const verItem = () => {
   const verProducto = JSON.parse(localStorage.getItem("ver")) || [];
   verProducto.forEach((item) => {
@@ -73,7 +71,7 @@ const similares = ()=>{
           imag,
           tit,
           pre,
-          des,
+          des
         };
 
         const verPro = JSON.parse(localStorage.getItem("ver")) || [];
@@ -94,7 +92,6 @@ const similares = ()=>{
 const similaresLocal = ({resultado, tituloValor, precioValor, categoriaValor, descripcionValor}) => {
   const lista = document.querySelector("[data-productos-similares]");
   if (categoria == categoriaValor && titu != tituloValor && numero < 6) {
-    console.log(numero);
     const item = document.createElement("li");
     item.classList.add("lista__item__producto");
 
@@ -128,9 +125,9 @@ const similaresLocal = ({resultado, tituloValor, precioValor, categoriaValor, de
         imag,
         tit,
         pre,
-        des,
+        des
       };
-
+      
       const verPro = JSON.parse(localStorage.getItem("ver")) || [];
       verPro.push(taskObj);
       localStorage.setItem("ver", JSON.stringify(verPro));

@@ -25,8 +25,18 @@ const categoriasIndex = () => {
     const verTodo = document.createElement("a");
     verTodo.innerHTML = "Ver Todo&#9758;";
     verTodo.classList.add("ver__seccion");
-    verTodo.setAttribute("href", "#");
+    verTodo.setAttribute("href", "services/ver-todo.html");
 
+    verTodo.addEventListener("click", ()=>{
+      const valor = categorias[i];
+      const obj = {
+        valor
+      }
+      localStorage.removeItem("todo");
+      const verTo = JSON.parse(localStorage.getItem("todo")) || [];
+      verTo.push(obj);
+      localStorage.setItem("todo", JSON.stringify(verTo));
+    })
     const listaProductos = document.createElement("ul");
     listaProductos.classList.add("lista__productos");
 
