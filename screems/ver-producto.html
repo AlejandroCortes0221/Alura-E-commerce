@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="../assets/css/header/styles.css">
     <link rel="stylesheet" href="../assets/css/header/header.css">
     <link rel="stylesheet" href="../assets/css/footer/contacto.css">
-    <link rel="stylesheet" href="../assets/css/main/ver-todo.css">
+    <link rel="stylesheet" href="../assets/css/main/ver-producto.css">
+    <link rel="stylesheet" href="../assets/css/main/similares.css">
     <link rel="stylesheet" href="../assets/css/main/productos.css">
     <link rel="stylesheet" href="../assets/css/reset.css">
-    <title>Productos</title>
+    <link rel="shortcut icon" href="../assets/img/LogoPagek.png">
+    <title>Producto</title>
 </head>
 <body>
     <header>
@@ -26,10 +28,21 @@
         </section>
     </header>
     <main>
-        <section class="todos_productos">
-            <div class="todos__info">
-                <ul class="todos__lista" data-lista-todo>
-
+        <section class="producto">
+            <div class="producto__informacion">
+                <div class="imagen_producto" data-imagen-producto></div>
+                <div class="producto-datos">
+                    <h1 class="titulo__producto" data-titulo-producto></h1>
+                    <h2 class="precio__producto" data-precio-producto></h2>
+                    <p class="descripcion__producto" data-descripcion-producto></p>
+                </div>
+            </div>
+        </section>
+        <section class="similares">
+            <div class="similares__info">
+                <h1 class="similares__encabezado">Productos Similares</h1>
+                <ul class="lista__similares" data-productos-similares>
+                    
                 </ul>
             </div>
         </section>
@@ -54,7 +67,8 @@
                 </form>
             </div>
         </div>
+    
     </footer>
-    <script src="../JS/ver-todo.js" type="module"></script>
+    <script src="../JS/ver-producto.js" type="module"></script>
 </body>
 </html>

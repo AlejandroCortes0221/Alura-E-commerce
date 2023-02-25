@@ -7,7 +7,7 @@
 }
 .lista__productos{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 .lista__item{

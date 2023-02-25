@@ -23,6 +23,7 @@
     flex-direction: column;
     gap: 10px;
     margin: auto 0;
+    padding-left: 20px;
 }
 
 .titulo__producto{

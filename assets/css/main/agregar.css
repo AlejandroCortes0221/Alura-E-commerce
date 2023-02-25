@@ -20,15 +20,17 @@
 }
 .imagen__antes{
     margin: 20px 0;
-    width: 40%;
+    width: 50%;
     height: 200px;
     background: url("../../img/esperando.png") no-repeat center / cover;
     box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.4);
 }
 .formulario__agregar{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 0 ;
 }
 .agregar__text{
     width: auto;
@@ -54,4 +56,33 @@
 
 .agregar__boton:hover{
     background: #1e6cd1;
+}
+
+@media screen and (min-width: 0px) and (max-width:480px) {
+    .agregar__producto{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .imagen__antes {
+        width: 80%;
+    }
+}
+@media screen and (min-width:481px) and (max-width:768px) {
+    .agregar__producto{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .imagen__antes {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1200px) {
+    .agregar__producto{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .imagen__antes {
+        width: 50%;
+    }
 }

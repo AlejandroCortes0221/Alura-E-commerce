@@ -68,3 +68,35 @@ footer{
 .form__boton:hover{
     background: #1e6cd1;
 }
+@media screen and (min-width: 0px) and (max-width:480px) {
+    .contacto{
+        width: 50%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+    }
+    .form__text{
+        display: block;
+        width: 300px;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    .contacto{
+        width: 50%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1200px) {
+    .contacto{
+        width: 50%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+    }
+}

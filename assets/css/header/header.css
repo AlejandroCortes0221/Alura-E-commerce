@@ -48,6 +48,7 @@
     color: #A2A2A2;
     position: absolute;
 }
+
 .inicio__boton{
     width: 2%;
     text-decoration: none;
@@ -67,4 +68,65 @@
 }
 .cabecera__login:hover{
     background: #def2f5;
+}
+@media screen and (min-width: 0px) and (max-width:480px) {
+    .inicio__logo {
+        position: relative;
+        width: 100px;
+        height: 25px;
+    }
+
+    .inicio__buscar {
+        color: #FFFFFF;
+        width: 0px;
+        background: #FFFFFF;
+        padding: 0;
+    }
+
+    .inicio__buscar__texto {
+        background: #FFFFFF
+    }
+
+    .inicio__buscar__texto::placeholder {
+        color: #FFFFFF;
+    }
+    .inicio__boton{
+        color: #FFFFFF;
+        width: 0%;
+        cursor: none;
+    }
+    .cabecera__login{
+        position: relative;
+        padding: 10px;
+        width: 112px;
+        height: 41px;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    .inicio__buscar {
+        width: 240px;
+        background: #FFFFFF;
+    }
+
+    .inicio__buscar__texto {
+        background: #FFFFFF
+    }
+
+    .inicio__buscar__texto::placeholder {
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1200px) {
+    .inicio__buscar {
+        width: 240px;
+        background: #FFFFFF;
+    }
+    .inicio__buscar__texto{
+        background: #FFFFFF
+    }
+    .inicio__buscar__texto::placeholder {
+       color: #FFFFFF;
+    }
 }
