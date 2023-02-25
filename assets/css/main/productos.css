@@ -1,6 +1,10 @@
 .productos{
     background: #F5F5F5;
 }
+.tamaño{
+    width: 176px;
+    height: 240px;
+}
 .secciones{
     padding: 40px 0;
     width: 80%;
@@ -90,4 +94,11 @@
 
 .ver__producto:hover::after {
     width: 51%;
+}
+
+@media screen and (min-width: 0px) and (max-width:480px) {
+    .tamaño{
+        width: 126px;
+        height: 180px;
+    }
 }

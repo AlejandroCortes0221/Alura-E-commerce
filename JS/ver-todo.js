@@ -84,8 +84,7 @@ const valores = () => {
       item.classList.add("lista__item__producto");
 
       const imagen = document.createElement("div");
-      imagen.style.width = "176px";
-      imagen.style.height = "240px";
+      imagen.classList.add("tamaño");
       imagen.style.background =
         "url(../" + informacion[i][1] + ") no-repeat center / cover";
 
@@ -136,8 +135,7 @@ const agregados = ({resultado,tituloValor,precioValor,descripcionValor,categoria
         item.classList.add("lista__item__producto");
 
         const imagen = document.createElement("div");
-        imagen.style.width = "176px";
-        imagen.style.height = "240px";
+        imagen.classList.add("tamaño");
         imagen.style.background =
           "url(" + resultado + ") no-repeat center / cover";
 

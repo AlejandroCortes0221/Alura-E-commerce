@@ -2,6 +2,10 @@
     background: #F5F5F5;
     padding: 80px 0 40px 0;
 }
+.tamaño{
+    width: 176px;
+    height: 240px;
+}
 .productos__encabezado{
     align-items: center;
     display: flex;
@@ -25,4 +29,11 @@
 }
 .encabezado__boton:hover {
     background: #1e6cd1;
+}
+
+@media screen and (min-width: 0px) and (max-width:480px) {
+    .tamaño {
+        width: 126px;
+        height: 180px;
+    }
 }

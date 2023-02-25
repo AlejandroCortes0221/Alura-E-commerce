@@ -15,8 +15,7 @@ const predefinidos = () => {
     item.classList.add("lista__item");
 
     const imagen = document.createElement("div");
-    imagen.style.width = "176px";
-    imagen.style.height = "240px";
+    imagen.classList.add("tamaño");
     imagen.style.background =
       "url(../" + informacion[i][1] + ") no-repeat center / cover";
     imagen.style.display = "flex";
@@ -78,8 +77,7 @@ const crearItem = ({
   item.classList.add("lista__item");
 
   const imagen = document.createElement("div");
-  imagen.style.width = "176px";
-  imagen.style.height = "240px";
+  imagen.classList.add("tamaño");
   imagen.style.background = "url(" + resultado + ") no-repeat center / cover";
   imagen.style.display = "flex";
   imagen.style.flexDirection = "row";
