@@ -22,6 +22,8 @@ const autenticacionAdmin = (user, pass)=>{
           title: "Oops...",
           text: "Usuario o contraseña incorrecta",
         });
+        const user = document.querySelector("[data-user]").value =  "";
+        const password = document.querySelector("[data-password]").value = "";
         return false;
     }
 }
