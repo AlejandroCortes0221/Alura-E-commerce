@@ -29,10 +29,10 @@
         <section class="login">
             <div class="login__card">
                 <h1 class="logn__titulo">Iniciar sesion</h1>
-                <form action="menu-admin.html" class="login__form">
-                    <input type="email" class="login__text" placeholder="Escriba su correo electronico" required>
-                    <input type="text" class="login__text" placeholder="Escriba su contraseña" required>
-                    <input type="submit" class="login__boton" value="Entrar">
+                <form class="login__form" data-form>
+                    <input type="email" class="login__text" placeholder="Escriba su correo electronico" required data-user>
+                    <input type="password" class="login__text" placeholder="Escriba su contraseña" required data-password>
+                    <input type="submit" class="login__boton" value="Entrar" data-btn-datos>
                 </form>
             </div>
         </section>
@@ -60,5 +60,7 @@
             </div>
         </footer>
     </footer>
+    <script src="../JS/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.35/dist/sweetalert2.all.min.js"></script>
 </body>
 </html>

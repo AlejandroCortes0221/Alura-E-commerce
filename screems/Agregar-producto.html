@@ -32,23 +32,23 @@
         <section class="agregar">
             <div class="agregar__producto">
                 <h1 class="agregar__titulo">Agregar nuevo Producto</h1>
-                <form action="menu-admin.html" class="formulario">
+                <form  class="formulario" data-form-agregar>
                     <label for="">Imagen del producto</label>
                     <div class="formulario__agregar">
                         <div class="imagen__antes" data-imagen id="imagen"> </div>
-                        <input type="file" class="agregar__imagen" id="file" data-file>
+                        <input type="file" class="agregar__imagen" id="file" data-file required>
                     </div>
                     <label for="">Categoria</label>
                     <select name="" id="" class="agregar__categoria agregar__text" data-form-categoria>
                     </select>
                     <label for="">Titulo del producto</label>
-                    <input type="text" class="agregar__text" data-form-titulo>
+                    <input type="text" class="agregar__text" data-form-titulo required>
                     <label for="">Precio</label>
-                    <input type="text" class="agregar__text" data-form-precio>
+                    <input type="text" class="agregar__text" data-form-precio required>
                     <label for="">Descripcion</label>
-                    <textarea cols="10" rows="3" class="agregar__text" data-form-descripcion></textarea>
+                    <textarea cols="10" rows="3" class="agregar__text" data-form-descripcion required></textarea>
                     <input type="submit" value="Agregar producto" class="agregar__boton" id="agrega" data-form-boton>
-               
+                </form>
             </div>
         </section>
         
@@ -74,6 +74,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.35/dist/sweetalert2.all.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="../JS/agregar.js" type="module"></script>
 </body>

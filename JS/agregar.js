@@ -4,6 +4,7 @@ const titulo = document.querySelector("[data-form-titulo]");
 const precio = document.querySelector("[data-form-precio]");
 const descripcion = document.querySelector("[data-form-descripcion]");
 const boton = document.querySelector("[data-form-boton]");
+const formulario = document.querySelector("[data-form-agregar]");
 const cate = ["Juegos","Consolas","Pc"];
 var img = "";
 $("#file").on("change", function () {
@@ -41,8 +42,25 @@ const agregraProducto = () => {
   const productoLista = JSON.parse(localStorage.getItem("producto")) || [];
   productoLista.push(taskObj);
   localStorage.setItem("producto", JSON.stringify(productoLista));
+
+  
+   Swal.fire({
+     icon: "success",
+     title: "Correcto",
+     text: "Producto ingresado con exito",
+   }).then(
+     setTimeout(()=>{
+      window.location.href = "../screems/menu-admin.html";
+     }, 2000)
+   );
+
 };
-boton.addEventListener("click", agregraProducto);
+formulario.addEventListener("submit", (e)=>{
+  e.preventDefault();
+  agregraProducto();
+});
+
+
 const categoriaSelect = () =>{
   for(let i = 0; i < cate.length; i++){
     const opcion = document.createElement("option");
